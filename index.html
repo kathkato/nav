@@ -5,7 +5,7 @@
   <title>Navigation Animation</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="http://katherinekato.com/misc/themify-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
 </head>
 <body>
 
@@ -49,29 +49,29 @@
                 <a class="secondary-nav-content" href="#" title="Reporting">
                   <span>Reporting</span>
                   <i class="ti-angle-down right-icon"></i>
-                  <ul class="accordion">
-                    <li>
-                      <a href="#" title="I-21 Injury Reporting">
-                        <span>I-21 Injury Reporting</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span>ASAP Reporting</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span>General ASAP Information</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span>Flight Attendant Incident Report</span>
-                      </a>
-                    </li>
-                  </ul>
                 </a>
+                <ul class="accordion">
+                  <li class="accordion-link">
+                    <a class="accordion-link-content" href="#" title="I-21 Injury Reporting">
+                      <span>I-21 Injury Reporting</span>
+                    </a>
+                  </li>
+                  <li class="accordion-link">
+                    <a class="accordion-link-content" href="#" title="ASAP Reporting">
+                      <span>ASAP Reporting</span>
+                    </a>
+                  </li>
+                  <li class="accordion-link">
+                    <a class="accordion-link-content" href="#" title="General ASAP Information">
+                      <span>General ASAP Information</span>
+                    </a>
+                  </li>
+                  <li class="accordion-link">
+                    <a class="accordion-link-content" href="#" title="Flight Attendant Incident Report">
+                      <span>Flight Attendant Incident Report</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="secondary-link">
                 <a class="secondary-nav-content" href="#" title="Agriculture and Customs">
@@ -169,7 +169,7 @@ $('.main-link').click(function () {
 
 $('.secondary-nav-content').click(function() {
   $(this).toggleClass('light');
-  $(this).next().toggleClass('show');
+  $(this).next().toggleClass('active');
 });
 </script>
 

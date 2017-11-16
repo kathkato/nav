@@ -338,22 +338,34 @@ header {
   background: #4888bc !important;
 }
 
+ul.accordion > li > a {
+  display: block;
+  position: relative;
+  padding: 0.8rem 5rem 0.8rem 5rem;
+  color: #fff;
+  background: #5590bf;
+  text-transform: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  border-top: 0.015rem solid #5e99c8;
+}
+
 .accordion {
   opacity: 0;
-  padding: 0 1rem;
   max-height: 0;
   overflow: hidden;
   clear: both;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
-.accordion.show {
+.accordion.active {
   opacity: 1;
-  padding: 1rem;
   max-height: 100%;
-  -webkit-transition: all 0.35s ease;
-  -o-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
