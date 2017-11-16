@@ -40,30 +40,52 @@
           <div class="second-menu">
             <ul>
               <li class="main">
-                <a class="nav-content" href="#" title="Safety">
+                <a class="main-link" href="#" title="Safety">
                   <span>Safety</span>
                   <i class="ti-close right-icon"></i>
                 </a>
               </li>
               <li class="secondary-link">
-                <a class="nav-content" href="#" title="Reporting">
+                <a class="secondary-nav-content" href="#" title="Reporting">
                   <span>Reporting</span>
                   <i class="ti-angle-down right-icon"></i>
+                  <ul class="accordion">
+                    <li>
+                      <a href="#" title="I-21 Injury Reporting">
+                        <span>I-21 Injury Reporting</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>ASAP Reporting</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>General ASAP Information</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span>Flight Attendant Incident Report</span>
+                      </a>
+                    </li>
+                  </ul>
                 </a>
               </li>
               <li class="secondary-link">
-                <a class="nav-content" href="#" title="Agriculture and Customs">
+                <a class="secondary-nav-content" href="#" title="Agriculture and Customs">
                   <span>Agriculture and Customs</span>
                   <i class="ti-angle-down right-icon"></i>
                 </a>
               </li>
               <li class="secondary-link">
-                <a class="nav-content" href="#" title="Known Crewmember">
+                <a class="secondary-nav-content" href="#" title="Known Crewmember">
                   <span>Known Crewmember</span>
                 </a>
               </li>
               <li class="secondary-link">
-                <a class="nav-content" href="#" title="Product Safety Data Search">
+                <a class="secondary-nav-content" href="#" title="Product Safety Data Search">
                   <span>Product Safety Data Search</span>
                 </a>
               </li>
@@ -132,12 +154,22 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
 $('.hamburger').click(function () {
-  $('.navigation').toggleClass('open');
+  $('.navigation').toggleClass('active');
 });
 
 $('.nav-content').click(function() {
   $(this).toggleClass('invert');
-  $('.second-menu').toggleClass('open');
+  $('.second-menu').toggleClass('active');
+});
+
+$('.main-link').click(function () {
+  $('.second-menu').toggleClass('active');
+  $('.nav-content').removeClass('invert');
+});
+
+$('.secondary-nav-content').click(function() {
+  $(this).toggleClass('light');
+  $(this).next().toggleClass('show');
 });
 </script>
 

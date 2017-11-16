@@ -167,7 +167,7 @@ header {
   transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(.55,.055,.675,.19), -webkit-transform 0.22s cubic-bezier(.55,.055,.675,.19);
 }
 
-.navigation.open .bars {
+.navigation.active .bars {
   -webkit-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   transform: rotate(225deg);
@@ -176,7 +176,7 @@ header {
   transition: all 0s 0.12s cubic-bezier(.215,.61,.355,1);
 }
 
-.navigation.open .bars:before {
+.navigation.active .bars:before {
   top: 0;
   opacity: 0;
   -webkit-transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
@@ -184,7 +184,7 @@ header {
   transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
 }
 
-.navigation.open .bars:after {
+.navigation.active .bars:after {
   bottom: 0;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -214,7 +214,7 @@ header {
   color: #fff;
 }
 
-.open .menu {
+.active .menu {
   left: 0;
   opacity: 1;
   -webkit-transition: all 0.28s ease;
@@ -285,7 +285,7 @@ header {
   transition: all 0.28s ease;
 }
 
-.second-menu.open {
+.second-menu.active {
   right: 0;
   opacity: 1;
   -webkit-transition: all 0.28s ease;
@@ -323,7 +323,37 @@ header {
   border-left: 0.015rem solid #3f83b6;
 }
 
+.second-menu > ul > li.secondary-link > a.secondary-nav-content.light i {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .invert {
   background: #fff !important;
   color: #2774af !important;
+}
+
+.light {
+  background: #4888bc !important;
+}
+
+.accordion {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.accordion.show {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
 }
