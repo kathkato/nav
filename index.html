@@ -152,26 +152,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-$('.hamburger').click(function () {
-  $('.navigation').toggleClass('active');
-});
-
-$('.nav-content').click(function() {
-  $(this).toggleClass('invert');
-  $('.second-menu').toggleClass('active');
-});
-
-$('.main-link').click(function () {
-  $('.second-menu').toggleClass('active');
-  $('.nav-content').removeClass('invert');
-});
-
-$('.secondary-nav-content').click(function() {
-  $(this).toggleClass('light');
-  $(this).next().toggleClass('active');
-});
-</script>
+<script src="custom.js"></script>
 
 </body>
 </html>
