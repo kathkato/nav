@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Animation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://katherinekato.com/misc/themify-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet"> 
+</head>
+<body>
+
+<header class="header-main">
+  <a class="logo" href="#" title="Logo">
+    <h2>Logo</h2>
+  </a>
+  <nav class="navigation">
+    <button class="hamburger">
+      <div class="hamburger-icon">
+        <div class="bars"></div>
+      </div>
+    </button>
+    <div class="menu">
+      <ul class="nav-items">
+        <li class="nav-link welcome">
+          <span>Hello Katherine Kato</span>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="My Schedule & Bidding">
+            <i class="ti-star left-icon"></i>
+            <span>My Schedule &amp; Bidding</span>
+            <i class="ti-angle-right right-icon"></i>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Safety">
+            <i class="ti-star left-icon"></i>
+            <span>Safety</span>
+            <i class="ti-angle-right right-icon"></i>
+          </a>
+          <div class="second-menu">
+            <ul>
+              <li class="main">
+                <a class="nav-content" href="#" title="Safety">
+                  <span>Safety</span>
+                  <i class="ti-close right-icon"></i>
+                </a>
+              </li>
+              <li class="secondary-link">
+                <a class="nav-content" href="#" title="Reporting">
+                  <span>Reporting</span>
+                  <i class="ti-angle-down right-icon"></i>
+                </a>
+              </li>
+              <li class="secondary-link">
+                <a class="nav-content" href="#" title="Agriculture and Customs">
+                  <span>Agriculture and Customs</span>
+                  <i class="ti-angle-down right-icon"></i>
+                </a>
+              </li>
+              <li class="secondary-link">
+                <a class="nav-content" href="#" title="Known Crewmember">
+                  <span>Known Crewmember</span>
+                </a>
+              </li>
+              <li class="secondary-link">
+                <a class="nav-content" href="#" title="Product Safety Data Search">
+                  <span>Product Safety Data Search</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Training">
+            <i class="ti-star left-icon"></i>
+            <span>Training</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Administration">
+            <i class="ti-star left-icon"></i>
+            <span>Administration</span>
+            <i class="ti-angle-right right-icon"></i>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Catering & Brand">
+            <i class="ti-star left-icon"></i>
+            <span>Catering &amp; Brand</span>
+            <i class="ti-angle-right right-icon"></i>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Hotels">
+            <i class="ti-star left-icon"></i>
+            <span>Hotels</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="My Base">
+            <i class="ti-star left-icon"></i>
+            <span>My Base</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="Recognition">
+            <i class="ti-star left-icon"></i>
+            <span>Recognition</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a class="nav-content" href="#" title="My Leadership Team">
+            <i class="ti-star left-icon"></i>
+            <span>My Leadership Team</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="content">
+  <header class="page-header">
+    <div class="section-container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Section</a></li>
+        <li class="breadcrumb-item active">Page Title</li>
+      </ol>
+    </div>
+  </header>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$('.hamburger').click(function () {
+  $('.navigation').toggleClass('open');
+});
+
+$('.nav-content').click(function() {
+  $(this).toggleClass('invert');
+  $('.second-menu').toggleClass('open');
+});
+</script>
+
+</body>
+</html>
